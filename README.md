@@ -39,6 +39,8 @@ Task Executor Method
 
 This is the method that will typically be used when you have a library with a Native implementation, whose primary functions return Tasks which are executed by a port.
 
+> Note that since Native modules depend on the inner workings of the Elm Runtime, writing your own is *not* recommended!  The one written here is for illustrative purposes only.
+
 The parts of this are as follows:
 
 - *Source*: The same as the *Source* in the Two Port Method.
@@ -51,7 +53,7 @@ The parts of this are as follows:
 The Demo Service
 ----------------
 
-In the interest of keeping this as minimal as possible, the service demonstrated in each case is kept as simple as possible.  In this case, each takes as a request any string, including the empty string, and returns in response a random number with the range `[0 5)`.  To further complicate matters, this response is sent 2 seconds after the request is received.
+In the interest of keeping this as minimal as possible, the service demonstrated in each case is kept as simple as possible.  In this case, each takes as a request any string, including the empty string, and returns in response a random number with the range `[0 5)`, and never returnning anything interpreted as an error.  To further complicate matters, this response is sent 2 seconds after the request is received.
 
 
 
