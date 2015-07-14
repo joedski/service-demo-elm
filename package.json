@@ -1,0 +1,22 @@
+{
+  "name": "service-demo-elm",
+  "version": "0.0.0",
+  "description": "A simple demo of wiring up Services.",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "brunch watch -s",
+    "deps": "npm install && elm-package install"
+  },
+  "keywords": [
+    "elm",
+    "demo"
+  ],
+  "author": "Joseph Sikorski <joedski@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "css-brunch": "^1.7.0",
+    "elm-brunch": "^0.2.0",
+    "javascript-brunch": "^1.7.1"
+  }
+}
